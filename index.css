@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Roboto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.btn {
+    text-decoration: none;
+    border: 0;
+    display: inline-block;
+    border-radius: 4px;
+    outline:0px;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    column-gap: 5px;
+}
+.btn-orange {
+    background-color: #E4A11B;
+}
+.btn-red {
+    background-color: #DC4C64
+}
+nav .btn-orange {
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 500px) {
+    .fa-bars {
+      display: none;
+    }
+    .menu div ul {
+        list-style: none;
+    }
+    header {
+        /* display: flex;
+        align-items: center;
+        height: auto;
+        background-color: lightgray;
+        width: 100%; */
+       padding: 10px 10px;
+       background-color: gray;
+       display: flex;
+       flex-direction: column;
+       align-items: start;
+       justify-content: center;
+       height: 200px;
+    }
+    nav {
+        /* first values */
+        /* display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        background-color: gray; */
+        /* end of first values */
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        width: 100%;
+        height: 50%;
+       
+    }
+    nav > div {
+        width: 50%;
+    }
+    nav .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+        position: relative;
+        font-size: 18px;
+        /* width: 100%; */
+        
+       
+    }
+    nav .menu > div {
+        display: flex;
+        align-items: center;
+    }
+    nav .menu div:nth-child(1) ul:nth-child(2) {
+        position: absolute;
+        top: 45px;
+        left: 10px;
+    }
+    nav .menu div:nth-child(1) ul:nth-child(3) {
+        display: flex;
+        align-items: center;
+        
+    }
+    nav .menu div:nth-child(1) ul:nth-child(3) li a {
+        padding: 10px 10px;
+    }
+    nav .menu div:nth-child(1) ul:nth-child(3) li a:hover {
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+    }
+    nav .menu div:nth-child(2) a {
+        padding: 10px 10px;
+    }
+    nav .menu div:nth-child(2) a:hover {
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+    }
+    nav .menu div:nth-child(1) {
+        transform: translate(-50%,-50%);
+        
+    }
+    nav .menu div:nth-child(2) {
+        transform: translateY(-50%);
+    }
+    nav .menu .active {
+        padding: 10px 10px;
+    }
+    nav .menu .active:hover {
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+    }
+    .fa-caret-down {
+        padding-left:5px;
+    }
+    .social {
+        /* display: flex; */
+        /* align-items:flex-start;
+        justify-content: flex-end; */
+        /* width:100%;  */
+        /* height:40.5px; */
+        /* height: 50%; */
+        height: 50%;
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .social div {
+        /* padding-right: 10px; */
+    }
+    .social div i {
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .social div i:hover {
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+    }
+    .social div i:nth-child(3) {
+        margin-right: 0;
+    }
+    nav div:nth-child(1) h1{
+        transform: translateY(-50%);
+
+    }
+    .social div:nth-child(2) {
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%; */
+        width: 50%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: flex-end;
+        
+    }
+    
+    .social div:nth-child(1) {
+        /* display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%; */
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .social div:nth-child(2) ul {
+        list-style: none;
+        display: flex;
+       /* column-gap: 10px; */
+       transform:translateX(50%);
+       padding-top: 10px;
+    }
+    .social div:nth-child(2) ul li a {
+        font-size: 18px;
+        padding:0 6px;
+        color : white;
+        opacity: 0.95;
+    }
+    .social div:nth-child(2) ul li a::after {
+        content: "|";
+        /* padding: 0 5px; */
+        padding-left: 9px;
+        
+    }
+    .social div:nth-child(2) ul li:nth-child(3) a::after {
+        content: "";
+    }
+  }
