@@ -122,6 +122,16 @@ nav .btn-orange {
     nav .menu .active {
         padding: 10px 10px;
     }
+    nav .dropMenu ul:nth-child(2) {
+        overflow: hidden;
+        height: 0;
+        transition: all 1s;
+    }
+    .dropMenu__List {
+        height: 60px!important;
+        
+        
+    }
     nav .menu .active:hover {
         background-color: black;
         color: white;
@@ -204,5 +214,112 @@ nav .btn-orange {
     }
     .social div:nth-child(2) ul li:nth-child(3) a::after {
         content: "";
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    body div:nth-child(1) {
+        background-color: gray;
+        padding: 10px 10px;
+    }
+    header {
+        /* background-color: gray; */
+        /* padding: 10px 10px; */
+        /* height: auto; */
+        /* height: 121.5px; */
+        max-height: 121.5px;
+        overflow: hidden;
+        transition: all 0.20s ease;
+        
+    }
+    .headerToggle {
+        /* height: 227.5px; */
+        max-height: 500px;
+        /* transition: all 1s; */
+        /* height: auto; */
+        /* max-height: auto; */
+       
+    }
+    /* .headerToggle__height { */
+        /* height: 295.5px; */
+        /* height: auto;
+    } */
+    header .social {
+        height: 74px;
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    header .social ul {
+        list-style: none;
+        display: flex;
+        transform: translateX(50%);
+    }
+    header .social div {
+        width: 50%;
+        display: flex;
+        justify-content:flex-end;
+        padding-top: 5px;
+    }
+    header .social div:nth-child(1) {
+        padding-right: 5px;
+    }
+    header nav {
+        /* height: auto; */
+        width: 100%;
+        /* background-color: green; */
+        /* overflow: hidden; */
+    }
+    header nav div:nth-child(1) {
+        padding: 5px;
+    }
+    header nav div:nth-child(1) h1 {
+        display: flex;
+        /* height: 80px; */
+        justify-content: space-between;
+    }
+    header .menu ul {
+        list-style: none;
+    }
+    /* Adjust the following code */
+    nav .dropMenu ul:nth-child(2) {
+        overflow: hidden;
+        height: 0; 
+        transition: all 0s;
+        /* display: none; */
+    }
+    /* nav div:nth-child(1) {
+        background-color: yellow;
+    } */
+    .dropMenu__List {
+        height: 60px!important;
+        /* display: block!important; */
+        /* height: auto; */
+    }
+    /* End of Adjustment */
+    .menu {
+        /* margin-top: -166px; */
+        /* visibility: hidden; */
+        /* transition: all 1s; */
+        /* height: 0; */
+       /* visibility: hidden; */
+        /* z-index: 5; */
+        /* opacity: 0;
+        display: none; */
+        /* background-color: yellow; */
+        /* padding: 10px 0; */
+    }
+    .menu__Toggle {
+        /* margin-top: 0; */
+        /* height: 140px; */
+        /* z-index: 5; */
+        /* visibility: visible;
+        opacity: 1; */
+        /* background-color: green; */
+        /* display: block; */
+    }
+    main {
+        font-size: 23px;
+        padding: 0 10px;
     }
   }
