@@ -228,7 +228,7 @@ nav .btn-orange {
         /* height: 121.5px; */
         max-height: 121.5px;
         overflow: hidden;
-        transition: all 0.05s ease;
+        transition: all 1s linear;
         
     }
     .headerToggle {
@@ -285,20 +285,40 @@ nav .btn-orange {
     /* Adjust the following code */
     nav .dropMenu ul:nth-child(2) {
         overflow: hidden;
-        height: 0; 
-        transition: all 0s;
+        max-height: 0; 
+        transition: all 1s;
         /* display: none; */
     }
     /* nav div:nth-child(1) {
         background-color: yellow;
     } */
     .dropMenu__List {
-        height: 60px!important;
-        
+        /* height: 80px!important; */
+        max-height: 500px!important;
+        background-color: rgb(172, 255, 127);
+        width: 270px;
+        margin-left: auto;
+        /* display: block; */
+
         /* display: block!important; */
         /* height: auto; */
     }
     /* End of Adjustment */
+    nav .dropMenu ul:nth-child(2) a {
+        /* line-height: 2; */
+        padding: 10px 0px 10px 21px;
+        display: block;
+        /* width: 100px; */
+        margin-left: auto;
+        text-align: left;
+    }
+    nav .dropMenu ul:nth-child(2) li {
+        border-bottom: 1px solid gray;
+    }
+    nav .dropMenu .fa-angle-right {
+        font-size: 13px;
+        display: inline-block;
+    }
     .menu {
         /* margin-top: -166px; */
         /* visibility: hidden; */
@@ -329,8 +349,30 @@ nav .btn-orange {
         display: block;
         line-height: 2.6;
     }
+    .toggleAbout {
+        margin-left:112px;
+    }
     main {
         font-size: 23px;
         padding: 0 10px;
+    }
+    .social div:nth-child(2) ul li a {
+        font-size: 18px;
+        padding:0 1.5px;
+        color : white;
+        opacity: 0.95;
+    }
+    .social div:nth-child(2) ul li a::after {
+        content: "|";
+        /* padding: 0 5px; */
+        padding-left: 3px;
+        
+    }
+    .social div:nth-child(2) ul li:nth-child(3) a::after {
+        content: "";
+    }
+    .social div i {
+        color: white;
+       padding-left: 3px;
     }
   }
