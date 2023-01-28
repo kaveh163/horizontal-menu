@@ -350,6 +350,7 @@ nav .btn-orange {
          /* padding: 20px 0; */
          display: block;
          line-height: 2.6;
+         color: white;
     }
     .menu .dropMenu .active {
         display: block;
@@ -380,5 +381,13 @@ nav .btn-orange {
     .social div i {
         color: white;
        padding-left: 3px;
+    }
+    .btn {
+        padding: 3px;
+        border-radius: 2px;
+        font-weight: 400;
+    }
+    .btn-orange {
+        margin-left: 5px;
     }
   }
