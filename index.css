@@ -221,6 +221,9 @@ nav .btn-orange {
         color: white;
         font-weight: 300;
     }
+    .fa-xmark {
+        display: none;
+    }
   }
   @media only screen and (max-width: 500px) {
     body div:nth-child(1) {
@@ -317,9 +320,11 @@ nav .btn-orange {
         /* width: 100px; */
         margin-left: auto;
         text-align: left;
+        
     }
     nav .dropMenu ul:nth-child(2) li {
         border-bottom: 1px solid gray;
+        
     }
     nav .dropMenu .fa-angle-right {
         font-size: 13px;
@@ -386,8 +391,25 @@ nav .btn-orange {
         padding: 3px;
         border-radius: 2px;
         font-weight: 400;
+        font-size: 18px;
     }
     .btn-orange {
         margin-left: 5px;
+    }
+    .fa-bars {
+       display: block;
+    }
+    .fa-fade {
+       
+    }
+    .hide {
+        
+    }
+    .fa-xmark {
+        display: none;
+    }
+    
+    .show {
+        
     }
   }
